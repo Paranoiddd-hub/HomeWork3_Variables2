@@ -6,7 +6,7 @@ public class Main {
         int intVariable = 32768;
         long longVarible = 3_000_000_000_000L;
         float floatVariable = 0.1f;
-        double dubleVariable = 2.5;
+        double doubleVariable = 2.5;
 
         System.out.println(
                 "byteVariable value is " + byteVariable + "\n" +
@@ -14,7 +14,7 @@ public class Main {
                         "intVariable value is " + intVariable + "\n" +
                         "longVariable value is " + longVarible + "\n" +
                         "floatVariable value is " + floatVariable + "\n" +
-                        "doubleVariable value is " + dubleVariable + "\n"
+                        "doubleVariable value is " + doubleVariable + "\n"
         );
         System.out.println();
 
@@ -22,7 +22,7 @@ public class Main {
         //2nd task:
         float one = 27.12f;
         long two = 987_678_965_549L;
-        String three = "2,786";
+        float three = 2.786f;
         short four = 569;
         short five = -159;
         short six = 27897;
@@ -36,7 +36,7 @@ public class Main {
                 teacher2 = 27,
                 teacher3 = 30;
         short paper = 480;
-        short perStudent = (short) (paper/(teacher1 + teacher2 + teacher3));
+        short perStudent = (short) (paper / (teacher1 + teacher2 + teacher3));
 
         System.out.println("Every student will get " + perStudent + " sheets.");
         System.out.println();
@@ -48,26 +48,20 @@ public class Main {
         int per3days = perDay * 3;
         int perMonth = per3days * 30;
 
-        System.out.println(
-                "The machine produces " + per20minutes + " bottles per 20 minutes\n" +
-                         perDay + " bottles per day\n" +
-                         per3days + " bottles per 3 days\n" +
-                        perMonth + " bottles per month\n"
-        );
+        System.out.println("За 20 минут машина произвела " + per20minutes + " штук бутылок");
+        System.out.println("За сутки машина произвела " + perDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + per3days + " штук бутылок");
+        System.out.println("За месяц машина произвела " + perMonth + " штук бутылок");
         System.out.println();
 
 
         //5th task:
         byte allCans = 120;
-        byte whiteCanPerClass = 2;
-        byte brownCanPerClass = 4;
-        byte classes = (byte) (allCans / (whiteCanPerClass + brownCanPerClass));
+        byte whiteCansPerClass = 2;
+        byte brownCansPerClass = 4;
+        byte classes = (byte) (allCans / (whiteCansPerClass + brownCansPerClass));
 
-        System.out.println(
-                "In a school with " + classes + " classes we need " +
-                        (classes / whiteCanPerClass) + " white color cans and " +
-                        (classes / brownCanPerClass) + " brown color cans."
-        );
+        System.out.println("В школе, где " + classes + " классов, нужно " + whiteCansPerClass + " банок белой краски и " + brownCansPerClass + " банок коричневой краски");
         System.out.println();
 
 
@@ -85,8 +79,8 @@ public class Main {
         float totalWeightKilogram = (float) totalWeightGram / 1000;
 
         System.out.println(
-            "Total weight of all products is " + totalWeightGram + " grams or " +
-                         totalWeightKilogram + " kilograms."
+                "Total weight of all products is " + totalWeightGram + " grams or " +
+                        totalWeightKilogram + " kilograms."
         );
         System.out.println();
 
@@ -95,8 +89,8 @@ public class Main {
         short targetWeight = 7000;
         short weightPerDay250 = 250;
         short weightPerDay500 = 500;
-        short daysFor250 =  (short) (targetWeight / weightPerDay250);
-        short daysFor500 =  (short) (targetWeight / weightPerDay500);
+        short daysFor250 = (short) (targetWeight / weightPerDay250);
+        short daysFor500 = (short) (targetWeight / weightPerDay500);
         float averageDays = (float) (daysFor250 + daysFor500) / 2;
 
         System.out.println(
@@ -112,9 +106,9 @@ public class Main {
         int denisMonth = 83690;
         int cristinaMonth = 76230;
         float percent = 1.1f;
-        float mashaAnnualDiff = (mashaMonth * percent  - mashaMonth) * 12;
-        float denisAnnualDiff = (denisMonth * percent  - denisMonth) * 12;
-        float cristinaAnnualDiff = (cristinaMonth * percent  - cristinaMonth) * 12;
+        float mashaAnnualDiff = (mashaMonth * percent - mashaMonth) * 12;
+        float denisAnnualDiff = (denisMonth * percent - denisMonth) * 12;
+        float cristinaAnnualDiff = (cristinaMonth * percent - cristinaMonth) * 12;
 
         System.out.println(
                 "Masha earns " + (mashaMonth * percent) + " rubles, annual income raised by " + mashaAnnualDiff + " rubles\n" +
